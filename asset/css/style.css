@@ -4,7 +4,7 @@
     --gradient-low: #304352;
     --gradient-high: #757E85;
 
-    --logo-color:#cbebff;
+    --logo-color:#14d685;
 
     --sidebar-bg-color:#757e8547;
     --header-bg-color:#11293d83;
@@ -18,8 +18,8 @@ body{
     line-height: 1.5;
     overflow: hidden;
     background: #304352;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #757E85, #304352);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #757E85, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to left, #bfc2c4, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #bfc2c4, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
@@ -49,12 +49,30 @@ body{
     margin-right:4px;
     color: var(--logo-color);
     font-size: 42px;
+    line-height: 1.5;
 }
 .sidebar-brand span{
     font-size: 36px;
     font-weight: bold;
-
 }
+.sidebar .sidebar-nav{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-rows: 6fr 4fr 1fr;
+    padding-bottom: 24px;
+    gap: 24px;
+}
+.sidebar-nav .subnav-top,
+.sidebar-nav .subnav-bot{
+    display: flex;
+    flex-direction: column;
+}
+.subnav{
+    padding: 0px 0px 12px 24px;
+}
+
 
 .header{
     grid-area: 1 / 2 / 1 / 2;
