@@ -57,7 +57,11 @@ body{
     font-weight: bold;
 }
 
-
+.bg-img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /* SIDEBAR SECTION */
 .sidebar{
     grid-area: 1 / 1 / 3 / 1;
@@ -119,9 +123,6 @@ body{
 }
 
     /* HEADER_SEARCH */
-.header .header-search{
-
-}
 .header-search .search-bar{
     background-color: var(--search-bar-color);
     flex: 0.5;
@@ -174,6 +175,7 @@ body{
     border-radius: 100px;
     border:4px solid var(--btn-color);
     background-color: var(--search-bar-color);
+    background-image: url(/asset/image/Avatar.jpg);
 }
 
 
@@ -229,9 +231,17 @@ body{
     position: relative;
     box-shadow: 1px 10px 30px var(--shadow-color);
 }
-.show-item img{
-    max-width: 50%;
-    max-height: 100%;
+.show-item.calculator{
+    background-image: url(../image/preview.png);
+}
+.show-item.etch{
+    background-image: url(../image/Drawing.webp);
+}
+.show-item.tetris{
+    background-image: url(../image/Tetris.png);
+}
+.show-item.todolist{
+    background-image: url(../image/tdl.png);
 }
 .show-item .item-detail{
     position: absolute;
@@ -239,6 +249,7 @@ body{
     width: 100%;
     text-align: center;
     color: var(--content-text-color);
+    background: rgba(255,255,255,0.8);
 }
 .project-dot .dot{
     min-width: 15px;
@@ -275,7 +286,6 @@ body{
     margin: 0;
 }
 
-
     /* CONTENT_TRENDING */
 .content .content-trending{
     grid-area: 2 / 2 / 4 / 2;
@@ -305,5 +315,17 @@ body{
     background-color: var(--btn-color);
     border:3px solid var(--alt-text-color);
     border-radius: 100px;
-    margin-right: 24px;
+    margin: 0px 24px 0px 12px;
+}
+.trending-list_item .larva{
+    background-image: url(../image/larva.jpg);
+}
+.trending-list_item .bee{
+    background-image: url(../image/bee.jpg);
+}
+.trending-list_item .woody{
+    background-image: url(../image/woody.jpeg);
+}
+.trending-list_item .ladybug{
+    background-image: url(../image/ladybug.jpg);
 }
