@@ -29,7 +29,6 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     line-height: 1.5;
-    overflow: hidden;
     background: #304352;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #bfc2c4, #304352);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #bfc2c4, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -217,10 +216,12 @@ body{
     grid-area: 3 / 1;
 }
 .project-show .arrow-left{
+    font-size: 24px;
     margin-left:20px;
     color: var(--alt-text-color);
 }
 .project-show .arrow-right{
+    font-size: 24px;
     margin-right:20px;
     color: var(--alt-text-color);
 }
