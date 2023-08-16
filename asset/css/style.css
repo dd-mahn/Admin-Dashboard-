@@ -19,6 +19,7 @@
     --content-bg-color: rgba(255,255,255,0.4);
     --content-text-color:#272343;
     --shadow-color: #9ab4b4;
+    --trending-item-color:#bae8e883;
 }
 
 
@@ -175,7 +176,7 @@ body{
     border-radius: 100px;
     border:4px solid var(--btn-color);
     background-color: var(--search-bar-color);
-    background-image: url(/asset/image/Avatar.jpg);
+    background-image: url(/asset/image/cloud.jpg);
 }
 
 
@@ -303,16 +304,17 @@ body{
 .trending-list .trending-list_item{
     min-width: 300px;
     min-height: 45px;
-    background-color: var(--content-bg-color);
+    background-color: var(--trending-item-color);
     border-radius: 15px;
     display: flex;
     align-items: center;
     padding-left: 48px;
+    box-shadow: 1px 5px 30px var(--shadow-color);
 }
 .trending-list_item div{
     min-width: 35px;
     min-height: 35px;
-    background-color: var(--btn-color);
+    background-color: var(--trending-item-color);
     border:3px solid var(--alt-text-color);
     border-radius: 100px;
     margin: 0px 24px 0px 12px;
@@ -328,4 +330,13 @@ body{
 }
 .trending-list_item .ladybug{
     background-image: url(../image/ladybug.jpg);
+}
+
+    /* CONTENT_SOCIAL */
+.content .content-social{
+    grid-area: 3 / 1 
+}
+.content-social i{
+    font-size: 28px;
+    margin: 0px 12px;
 }
